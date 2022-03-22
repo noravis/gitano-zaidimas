@@ -1,7 +1,7 @@
-*{ 
+/* *{ 
     padding: 0; 
     margin: 0;
-}
+} */
 
 #game {
     margin: 20px;
@@ -54,12 +54,12 @@
     animation: block  1.5s infinite linear;
 }
 .move4 {
-    animation: block  1.2s infinite linear; */
-}
+    animation: block  1.2s infinite linear; }*/
+
 
 .start {
     width: 70px;
-   margin-top: 10px;
+    margin-top: 10px;
 }
 
 .description {
