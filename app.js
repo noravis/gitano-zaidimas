@@ -5,21 +5,31 @@ let block = document.getElementById('block');
 let counter = document.getElementById("counter");
 counter.innerHTML = 0;
 
-const button1 = document.querySelector(".start")
+const button1 = document.querySelector(".start");
+
 
 character.addEventListener('click', () => {
     if(character.classList != "animate") {
     character.classList.add("animate");
-    }
+    counter.innerHTML++;
+    } 
+    // if (counter.innerHTML >= 2) {
+    //     block.classList.add("move2");
+    // }
+    // if (counter.innerHTML >= 6) {
+    //     block.classList.add("move3");
+    // }
+    // if (counter.innerHTML >= 10) {
+    //     block.classList.add("move3");
+    // }
+
     setTimeout(function() {
         character.classList.remove("animate");
         
     }, 500)
 
-    if ( checkIfLost === true) {
-        counter.innerHTML--
-    }
-    counter.innerHTML++
+   
+   
 })
 
 
@@ -37,17 +47,19 @@ let checkIfLost = setInterval(function() {
 
 
 button1.addEventListener('click', () => {
-    
+       counter.innerHTML = 0;
        block.classList.add("move");
         
        block.style.animation =  "block 2s infinite linear";
-        block.style.display = "block"
-     
-        
-        
-    
+       block.style.display = "block";
+
+       if (counter.innerHTML >= 2) {
+        block.classList.add("move2");
+    }
 
 })
+
+
 
 
 

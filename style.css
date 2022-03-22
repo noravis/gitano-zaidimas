@@ -27,6 +27,7 @@
     animation: jump 500ms;
 }
 
+
 #block {
     width: 50px;
     height: 50px; 
@@ -40,20 +41,33 @@
 }
 
 .gitano-gitaros {
-    margin-top: 200px;
+    margin-top: 10px;
 }
 
 .move {
     animation: block 2s infinite linear;
 }
+/* .move2 {
+    animation: block  1.8s infinite linear;
+}
+.move3 {
+    animation: block  1.5s infinite linear;
+}
+.move4 {
+    animation: block  1.2s infinite linear; */
+}
 
 .start {
     width: 70px;
-   margin-top: 80px;
+   margin-top: 10px;
 }
 
 .description {
-  margin-top: -80px;
+  margin-top: 150px;
+}
+
+.block {
+    display: inline-block;
 }
 
 @keyframes jump{
