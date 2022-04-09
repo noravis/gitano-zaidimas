@@ -2,25 +2,31 @@
     padding: 0; 
     margin: 0;
 } */
+body {
+    background-color: #B7CADB;
+}
 
 #game {
     margin: 20px;
     width: 500px;
     height: 200px;
     border: 1px solid black;
+    border-radius: 3px;
+    border: 3px solid #DAB88B;
+    background-color: #F3E9DD;
 
 }
 
 #character {
-    width: 40px;
-    height: 80px;
-    background-image: url(./media/mr.prezikas.png);
+    width: 70px;
+    height: 150px;
+    background-image: url(./media/stickman-removebg-preview.png);
     border-radius: 40%;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    top: 125px;
-    left: 10px;
+    top: 145px;
+    left: 0px;
 }
 
 .animate {
@@ -29,23 +35,38 @@
 
 
 #block {
-    width: 50px;
-    height: 50px; 
-    background-image: url(./media/gitara.png);
-    background-size: contain;
+    width: 30px;
+    height: 30px; 
+    background-image: url('./media/bomba-removebg-preview.png');
+    border-radius: 40%;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    top: 100px;
-    left: 40px;
+    top: 20px;
+    left: 45px;
    
 }
 
-.gitano-gitaros {
+.bombos, .description {
     margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Rubik Puddles";
 }
 
 .move {
     animation: block 2s infinite linear;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #DAB88B;
+    border-radius: 10px;
+    color: white;
+    font-family: "Rubik Puddles"
+    
 }
 /* .move2 {
     animation: block  1.8s infinite linear;
@@ -68,6 +89,9 @@
 
 .block {
     display: inline-block;
+}
+#counter {
+    font-weight: bold;
 }
 
 @keyframes jump{

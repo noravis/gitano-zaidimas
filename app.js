@@ -36,10 +36,10 @@ character.addEventListener('click', () => {
 let checkIfLost = setInterval(function() {
     let characterTopPosition = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeftPosition = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if (blockLeftPosition<40 && blockLeftPosition > 0 && characterTopPosition >=100) {
+    if (blockLeftPosition<45 && blockLeftPosition > 0 && characterTopPosition >=140) {
         block.style.animation = "none";
         block.style.display = "none"
-        alert('Gitanas gitaros neperšoko. Bandykite dar kartą!');
+        alert('žmogeliukas bombos neperšoko. Bandykite dar kartą!');
         counter.innerHTML = 0;
         block.classList.remove("move");
     } 
