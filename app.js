@@ -39,7 +39,7 @@ let checkIfLost = setInterval(function() {
     if (blockLeftPosition<45 && blockLeftPosition > 0 && characterTopPosition >=140) {
         block.style.animation = "none";
         block.style.display = "none"
-        alert('žmogeliukas bombos neperšoko. Bandykite dar kartą!');
+        alert('Try again!');
         counter.innerHTML = 0;
         block.classList.remove("move");
     } 
